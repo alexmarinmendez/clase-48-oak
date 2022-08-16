@@ -1,5 +1,7 @@
 import { Application } from 'oak';
+import { config } from "dotenv";
 
+const { PORT = 3000 } = config();
 const app = new Application();
 app.use(ctx => {
     ctx.response.type = "text/html"
@@ -7,6 +9,6 @@ app.use(ctx => {
 })
 
 console.log('Server Up')
-await app.listen({ port: 8080 })
+await app.listen({ port: +PORT })
 
 
