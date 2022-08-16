@@ -1,5 +1,5 @@
-import { colorlog } from './dev_deps.ts';
+import { error, warning, success } from 'colorlog';
 
-console.log(colorlog.error('Error!'))
-console.log(colorlog.warning('Error!'))
-console.log(colorlog.success('Error!'))
+console.log(error('Error!'))
+console.log(warning('Error!'))
+console.log(success('Error!'))

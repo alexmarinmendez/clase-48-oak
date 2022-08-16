@@ -1,0 +1,5 @@
+{
+    "imports": {
+      "colorlog": "https://deno.land/x/colorlog@v1.0/mod.ts"
+    }
+  }

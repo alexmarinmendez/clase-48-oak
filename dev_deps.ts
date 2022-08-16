@@ -1,1 +1,0 @@
-export * as colorlog from "https://deno.land/x/colorlog@v1.0/mod.ts";
