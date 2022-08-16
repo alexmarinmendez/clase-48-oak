@@ -1,5 +1,12 @@
-import { error, warning, success } from 'colorlog';
+import { Application } from 'oak';
 
-console.log(error('Error!'))
-console.log(warning('Error!'))
-console.log(success('Error!'))
+const app = new Application();
+app.use(ctx => {
+    ctx.response.type = "text/html"
+    ctx.response.body = "<h1>Hola Mundo!!!</h1>"
+})
+
+console.log('Server Up')
+await app.listen({ port: 8080 })
+
+

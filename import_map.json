@@ -1,5 +1,5 @@
 {
     "imports": {
-      "colorlog": "https://deno.land/x/colorlog@v1.0/mod.ts"
+      "oak": "https://deno.land/x/oak@v10.6.0/mod.ts"
     }
   }
